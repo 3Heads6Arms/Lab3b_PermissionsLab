@@ -18,12 +18,9 @@ public class ActivityLoaderActivity extends Activity {
 
 		Button startBookmarksButton = (Button) findViewById(R.id.start_bookmarks_button);
 		startBookmarksButton.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
-
 				startBookMarksActivity();
-			
 			}
 		});
 	}
@@ -32,7 +29,7 @@ public class ActivityLoaderActivity extends Activity {
 		
 		Log.i(TAG, "Entered startBookMarksActivity()");
 	
-		// TODO - Start the BookmarksActivity
-
+        Intent intent = new Intent(getApplicationContext(), BookmarksActivity.class);
+        startActivity(intent);
 	}
 }

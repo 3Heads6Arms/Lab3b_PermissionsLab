@@ -25,26 +25,19 @@ public class BookmarksActivity extends Activity {
 
 		Button getBookmarksButton = (Button) findViewById(R.id.get_bookmarks_button);
 		getBookmarksButton.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
-
 				loadBookmarks();
-
 			}
 		});
 
 		Button goToDangerousActivityButton = (Button) findViewById(R.id.go_to_dangerous_activity_button);
 		goToDangerousActivityButton.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
-
 				startGoToDangerousActivity();
-
 			}
 		});
-
 	}
 
 	private void loadBookmarks() {
@@ -75,12 +68,10 @@ public class BookmarksActivity extends Activity {
 	}
 
 	private void startGoToDangerousActivity() {
-
 		Log.i(TAG, "Entered startGoToDangerousActivity()");
 
-		// TODO - Start the GoToDangerousActivity
-		
-
+		Intent intent = new Intent(getApplicationContext(), GoToDangerousActivity.class);
+        startActivity(intent);
 	}
 
 }

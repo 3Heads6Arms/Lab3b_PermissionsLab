@@ -21,15 +21,11 @@ public class GoToDangerousActivity extends Activity {
 
 		Button startDangerousActivityButton = (Button) findViewById(R.id.start_dangerous_activity_button);
 		startDangerousActivityButton.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
-
 				startDangerousActivity();
-
 			}
 		});
-
 	}
 
 	private void startDangerousActivity() {
@@ -37,8 +33,6 @@ public class GoToDangerousActivity extends Activity {
 		Log.i(TAG, "Entered startDangerousActivity()");
 
 		startActivity(new Intent(DANGEROUS_ACTIVITY_ACTION));
-		
-
 	}
 
 }
